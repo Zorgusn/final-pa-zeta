@@ -1,0 +1,5 @@
+{
+    "python.analysis.extraPaths": [
+        "./jmu_ros2_util-master"
+    ]
+}
