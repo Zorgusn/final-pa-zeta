@@ -51,10 +51,10 @@ def create_nav_goal(x, y, theta):
     return goal
 
 
-class random_nav(rclpy.node.Node):
+class rescue_node(rclpy.node.Node):
 
     def __init__(self, x=0.0, y=0.0, theta=0.0, timeout=float("inf")):
-        super().__init__("random_nav")
+        super().__init__("rescue_node")
 
         # This QOS Setting is used for topics where the messages
         # should continue to be available indefinitely once they are
@@ -201,8 +201,8 @@ def main():
 
     rclpy.init()
 
-    # node = random_nav(args.x, args.y, args.theta, args.timeout)
-    node = random_nav()
+    # node = rescue_node(args.x, args.y, args.theta, args.timeout)
+    node = rescue_node()
 
     # future = node.send_goal()
 
